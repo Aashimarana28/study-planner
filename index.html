@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Study Planner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <p class="eyebrow">STUDENT PRODUCTIVITY</p>
+      <h1>My Study Planner</h1>
+      <p class="subtitle">Plan your tasks, stay organised, and track your progress.</p>
+    </header>
+
+    <section class="composer" aria-label="Add a study task">
+      <input id="taskInput" type="text" placeholder="e.g. Revise Java inheritance" maxlength="100" />
+      <button id="addButton">Add task</button>
+    </section>
+
+    <section class="summary">
+      <div><strong id="totalCount">0</strong><span>Total</span></div>
+      <div><strong id="doneCount">0</strong><span>Completed</span></div>
+      <div><strong id="remainingCount">0</strong><span>Remaining</span></div>
+    </section>
+
+    <section class="task-section">
+      <div class="section-heading">
+        <h2>Today's tasks</h2>
+        <button id="clearButton" class="text-button">Clear completed</button>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+      <p id="emptyMessage" class="empty-message">No tasks yet. Add your first study task above!</p>
+    </section>
+
+    <footer>Small steps every day make a big difference.</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
