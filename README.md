@@ -53,4 +53,4 @@ study-planner/
 
 ## Author
 
-Add your name here.
+Aashima rana.
